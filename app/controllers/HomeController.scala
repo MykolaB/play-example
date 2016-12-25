@@ -22,7 +22,7 @@ class HomeController @Inject() extends Controller {
   }
 
   def hello(name: String) = Action {
-    Ok("Hello " + name)
+    Ok(views.html.index(name))
   }
 
 }
